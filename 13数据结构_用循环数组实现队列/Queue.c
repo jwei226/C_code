@@ -103,7 +103,5 @@ E queue_peek(Queue* q) {
 }
 
 bool queue_empty(Queue* q) {
-	if (q->size == 0) {
-		return true;
-	}else return false;	
+	return q->size == 0;
 }
